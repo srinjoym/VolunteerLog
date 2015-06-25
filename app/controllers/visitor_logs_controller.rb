@@ -31,7 +31,7 @@ class VisitorLogsController < ApplicationController
   end
 
   def index
-    @visitor_logs= VisitorLog.paginate(page: params[:page])
+    @visitor_logs= current_user.visitor_logs
   end
 
 end
