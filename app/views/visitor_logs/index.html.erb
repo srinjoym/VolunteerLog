@@ -7,11 +7,19 @@
       <th>Time Ended</th>
       <th>Reason</th>
     </tr>
-    <% @visitor_logs.each do |visitor_log| %>
-    <tr>
+    <% @visitor_logs.reverse.each do |visitor_log| %>
+        <% if visitor_log.time_out.nil?%>
+    <tr class = "warning">
+      <%else%>
+            <tr>
+              <%end%>
       <td><%=visitor_log.time_in.strftime("%m-%d-%Y ")%></td>
       <td><%=visitor_log.time_in.strftime("%H:%M ")%></td>
-        <td><%=visitor_log.time_out.strftime("%H:%M ")%></td>
+      <% if visitor_log.time_out.nil?%>
+            <td>In Progress</td>
+          <%else%>
+          <td><%=visitor_log.time_out.strftime("%H:%M ")%></td>
+          <%end%>
       <td><%=visitor_log.reason%></td>
     </tr>
     <%end%>
