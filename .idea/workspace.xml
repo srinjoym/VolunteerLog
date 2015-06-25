@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3cc01eb-4c2b-4463-9f35-c8d2f2ab9e44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/visitor_logs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/visitor_logs/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/visitor_logs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/visitor_logs_controller.rb" />
-    </list>
+    <list default="true" id="c3cc01eb-4c2b-4463-9f35-c8d2f2ab9e44" name="Default" comment="" />
     <ignored path="VolunteerLog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/components/" />
