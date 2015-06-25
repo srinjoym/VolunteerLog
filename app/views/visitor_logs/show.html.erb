@@ -1,0 +1,11 @@
+<div class = "container center">
+<h1>Session in Progress</h1>
+
+<h2 style="color:red">Start Time: <%=@visitor_log.time_in.strftime("%H:%M %p")%></h2>
+
+<h2>You're currently signed in. Click here to sign out.</h2>
+
+  <%=link_to "Sign Out" ,signout_path%>
+
+
+</div>

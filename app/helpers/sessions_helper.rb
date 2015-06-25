@@ -43,4 +43,9 @@ module SessionsHelper
     @current_user = nil
   end
 
+  # checks if admin
+  def admin
+
+  end
+
 end
